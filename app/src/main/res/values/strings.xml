@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">LocalStorage</string>
+    <string name="file_new">New</string>
+    <string name="file_open">Open</string>
+    <string name="file_save">Save</string>
+    <string name="title">Judul</string>
+    <string name="content">Ketik apa saja....</string>
+
+</resources>

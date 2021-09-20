@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_background"
+    android:paddingTop="25dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    tools:context="id.syakurr.localstorage.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout_text"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_judul"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/white"
+            android:ems="10"
+            android:hint="@string/title"
+            android:inputType="textPersonName|textNoSuggestions"
+            android:padding="@dimen/tiny_margin"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/edit_konten"
+            style="@style/Widget.AppCompat.EditText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/edit_judul"
+            android:background="@android:color/white"
+            android:gravity="top|start"
+            android:hint="@string/content"
+            android:inputType="textMultiLine|textNoSuggestions"
+            android:padding="15dp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout_text"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tombol_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:backgroundTint="#ABB7B7"
+            android:text="@string/file_new" />
+
+        <Button
+            android:id="@+id/tombol_open"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:backgroundTint="#F3C13A"
+            android:text="@string/file_open"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/tombol_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#26A65B"
+            android:text="@string/file_save" />
+
+    </LinearLayout>
+</RelativeLayout>
